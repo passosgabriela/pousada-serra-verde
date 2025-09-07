@@ -39,6 +39,137 @@
           </li>
         </ol>
       </section>
+      <h3>Faça sua reserva agora na Pousada Serra Verde:</h3>
+      <form>
+        <fieldset>
+          <legend>Solicitação de Reserva</legend>
+
+          <p>
+            <label for="nome">Nome</label><br />
+            <input type="text" id="nome" name="nome" size="40" required />
+          </p>
+
+          <p>
+            <label for="idade">Idade</label><br />
+            <input
+              type="range"
+              id="idade"
+              name="idade"
+              min="0"
+              max="100"
+              value="18"
+              oninput="valorIdade.value = this.value"
+            />
+            <output id="valorIdade">18</output> anos
+          </p>
+
+          <p>
+            <label for="celular">Celular</label><br />
+            <input
+              type="tel"
+              id="celular"
+              name="celular"
+              placeholder="(99) 99999-9999"
+            />
+          </p>
+
+          <p>
+            <label for="email">E-mail</label><br />
+            <input type="email" id="email" name="email" size="40" required />
+          </p>
+
+          <p>
+            <label for="cidade">Cidade</label><br />
+            <input type="text" id="cidade" name="cidade" size="30" />
+            <label for="uf">UF</label>
+            <select id="uf" name="uf">
+              <option>SP</option>
+              <option>RJ</option>
+              <option>MG</option>
+            </select>
+          </p>
+
+          <p>
+            <label>Chalé</label><br />
+            <input type="radio" name="chale" value="economico" /> Econômico
+            <input type="radio" name="chale" value="standard" /> Standard
+            <input type="radio" name="chale" value="luxo" /> Luxo
+            <input type="radio" name="chale" value="familia" /> Família
+          </p>
+
+          <p>
+            <label for="chegada">Chegada</label><br />
+            <input type="date" id="chegada" name="chegada" />
+          </p>
+
+          <p>
+            <label for="partida">Partida</label><br />
+            <input type="date" id="partida" name="partida" />
+          </p>
+
+          <p>
+            <label for="adultos">Adultos</label><br />
+            <input
+              type="number"
+              id="adultos"
+              name="adultos"
+              value="2"
+              min="1"
+              max="10"
+            />
+          </p>
+
+          <p>
+            <label for="criancas">Crianças</label><br />
+            <input
+              type="number"
+              id="criancas"
+              name="criancas"
+              value="0"
+              min="0"
+              max="10"
+            />
+            Até 5 anos
+          </p>
+
+          <p>
+            <input type="checkbox" id="estacionamento" name="estacionamento" />
+            <label for="estacionamento"
+              >Quero reservar uma vaga no estacionamento.</label
+            >
+          </p>
+
+          <p>
+            <label for="pagamento">Forma de Pagamento</label><br />
+            <select id="pagamento" name="pagamento">
+              <option>Transferência (TED/DOC)</option>
+              <option>Pix</option>
+              <option>Depósito</option>
+              <option>Cartão de Crédito</option>
+              <option>Mastercard</option>
+              <option>Visa</option>
+              <option>Elo</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="obs"
+              >Se desejar, faça um pedido especial, faremos o possível para
+              atendê-lo:</label
+            ><br />
+            <textarea id="obs" name="obs" rows="4" cols="50"></textarea>
+          </p>
+
+          <p>
+            <button
+              type="button"
+              onclick="alert('Obrigado! Em breve, entraremos em contato para confirmação de sua reserva.')"
+            >
+              Solicitar Reserva
+            </button>
+          </p>
+        </fieldset>
+      </form>
     </main>
 
     <footer>
