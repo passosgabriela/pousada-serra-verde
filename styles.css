@@ -1,0 +1,107 @@
+header {
+    background-color: #004d26;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background-image: url("/midia/images/paisagem.png");
+    background-size: cover;
+    background-position: center;
+    border: #004d26 5px solid;
+    max-width: 75%;
+    margin: auto;
+
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #006633;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #004d26;
+}
+
+body {
+    padding: 40px 20px;
+    min-height: 400px;
+    background-color: #006633;
+    background-image: url("/midia/images/folhas.png");
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: fixed;
+}
+
+main {
+    max-width: 75%;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #004d26;
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    background-size: auto;
+    background-position: center;
+    max-width: 75%;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #004d26;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #004d26;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+button,
+.btn {
+    background-color: #006633;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #004d26;
+}
+
+div{
+    text-align: center;
+    align-items: center;
+}
