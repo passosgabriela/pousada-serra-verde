@@ -9,9 +9,9 @@ header {
     border: #004d26 5px solid;
     max-width: 75%;
     margin: auto;
-
 }
 
+/* Seletor Descendente */
 header h1 {
     font-size: 2.5em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -101,7 +101,47 @@ button:hover,
     background-color: #004d26;
 }
 
-div{
+div {
     text-align: center;
     align-items: center;
+}
+
+
+/* Seletor Descendente */
+div p {
+    font-style: italic;
+    color: #333;
+}
+
+/* Seletor Irmão Adjacente */
+h2 + p {
+    font-weight: bold;
+    color: #004d26;
+}
+
+/* Seletor Irmão Geral */
+h2 ~ p {
+    font-size: 0.95em;
+    color: #222;
+}
+
+/* Pseudoclasses */
+a:visited {
+    color: #cccccc;
+}
+
+p:first-child {
+    text-decoration: underline;
+}
+
+/* Pseudoelementos */
+p::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #006633;
+}
+
+h2::after {
+    content: " 🌿";
+    color: #006633;
 }
